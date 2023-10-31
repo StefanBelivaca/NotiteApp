@@ -8,11 +8,16 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->textEdit->setStyleSheet("QTextEdit { background-color: #fefae0; }");
+    ui->label->setStyleSheet("QLabel { color: white; }");
+
 }
+
 
 MainWindow::~MainWindow()
 {
     delete ui;
+
 }
 
 

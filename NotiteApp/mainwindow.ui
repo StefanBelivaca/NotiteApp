@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color:rgb(96, 108, 56);
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
@@ -23,7 +28,13 @@
          <font>
           <family>Arial</family>
           <pointsize>20</pointsize>
+          <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+color:  white:
+}</string>
         </property>
         <property name="text">
          <string>Gestionar de notite</string>
@@ -34,10 +45,36 @@
        </widget>
       </item>
       <item>
-       <widget class="QTextEdit" name="textEdit"/>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="Save">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>11</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(40, 54, 24);
+color:white;
+
+
+}</string>
+        </property>
         <property name="text">
          <string>Salveaza</string>
         </property>
